@@ -1,10 +1,10 @@
 class Pirate
-  attr_accessor :name, :type, :height
+  attr_accessor :name, :weight, :height
   @@all = []
   def initialize(properties)
-    name = properties[:name]
-    type = properties[:type]
-    height = properties[:height]
+    @name = properties[:name]
+    @weight = properties[:weight]
+    @height = properties[:height]
     @@all << self 
   end
   
